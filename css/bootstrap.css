@@ -4085,6 +4085,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse {
   padding-right: 15px;
   padding-left: 15px;
+  padding-top:10px;
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   border-top: 1px solid transparent;
@@ -4183,16 +4184,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-}
-.navbar-brand-2{
-  float: left;
-  height: 50px;
-  padding: 15px 15px;
-  color: #ffffff;
-  font-family: OpenSans;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 30px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
