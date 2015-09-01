@@ -10,9 +10,11 @@
 <!-- Include css Style -->
 	<link rel="stylesheet" href="css/style.css">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery.js"></script
-><!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<script src="js/bootstrap.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/script.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -22,15 +24,17 @@
       <a class="navbar-brand" href="#"><img src="img/logo.png"></a> 
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
+    <i class=""></i>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
+
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li class="activate">
+        <li class="active">
         	<a href="#">home</a> 
         </li>
         <li>
@@ -41,7 +45,7 @@
         </li>
         <li class="dropdown"> 
         	<a href="#">
-    	    	Dropdown 
+        	Dropdown 
 	            <span class="caret"></span>
             </a>
           <ul class="dropdown-menu" role="menu">
@@ -60,138 +64,125 @@
 
 <!-- HEADER -->
 <header>
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 class="text-center">Lorem ipsum dolor sit amet</h1>
-          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dicta, cupiditate consequatur necessitatibus quos libero eius ipsum qui sit molestiae.</p>
-          <p>&nbsp;</p>
-          <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> </p>
-        </div>
-      </div>
-    </div>
+  <div id="slider">
+ <figure>
+<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/taj-mahal.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/ibiza.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/ankor-wat.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
+</figure>  
   </div>
 </header>
 <!-- / HEADER --> 
 
 <!--  SECTION-1 -->
-<section>
-  <div class="row">
-    <div class="col-lg-12 page-header text-center">
-      <h2>ABOUT US</h2>
+<section style="margin-bottom:20px;">
+<div class="jumbotron">
+    <div class="container" >
+      <div class="row">
+        <div class="col-xs-12" style="background-color: #ececec;padding:15px;">
+          <h2 class="text-left">Some of out top sevices</h2>
+          <h2 class="small text-left" style="float:left; margin-top:-10px; margin-right:10px;">
+          	Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis 							            orci, ut commodo. 
+          </h2>
+          <a class="btn btn-primary btn-lg" style="float:right; margin-top:-40px; margin-left:10px;" href="#" role="button">
+          	View more
+          </a> 
+        </div>
+      </div>
     </div>
   </div>
+
   <div class="container ">
     <div class="row">
-      <div class="col-lg-4 col-sm-12 text-center"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/140X140.gif" data-holder-rendered="true">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <div class="col-lg-3 col-sm-13 text-center" style="border-radius:5px; background-color: #ffffff; margin-right: 10px; padding-top: 30px; height: 240px; "> 
+      	<img class="img-square" alt="OK" src="img/ok.png" data-holder-rendered="true">
+        <h3 style="margin-bottom:20px;">Suspendisse</h3>
+        <p> Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button" style="font-size: 13px; margin-top:">read more</a>
       </div>
-      <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/140X140.gif" data-holder-rendered="true">
-        <h3>Lorem ipsum dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <div class="col-lg-3 col-sm-12 text-center" style="border-radius:5px; background-color: #ffffff; margin-right: 10px; padding-top: 30px;  height: 240px; ""> 
+      	<img class="img-square" alt="OK" src="img/chiave.png" data-holder-rendered="true">
+        <h3 style="margin-bottom:20px;">Suspendisse</h3>
+        <p> Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.</p>
+        <a class="btn btn-secondary btn-lg" href="#" role="button" style="font-size: 13px">read more</a>
       </div>
-      <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/140X140.gif" data-holder-rendered="true">
-        <h3>Lorem ipsum dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <div class="col-lg-3 col-sm-12 text-center" style="border-radius:5px; background-color: #ffffff; margin-right: 10px; padding-top: 30px; height: 240px; ""> 
+      	<img class="img-square" alt="OK" src="img/bandiera.png" data-holder-rendered="true">
+        <h3 style="margin-bottom:20px;">Suspendisse</h3>
+        <p> Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.</p>
+        <a class="btn btn-secondary btn-lg" href="#" role="button" style="font-size: 13px">read more</a>
       </div>
-      <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/140X140.gif" data-holder-rendered="true">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-      <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/140X140.gif" data-holder-rendered="true">
-        <h3>Lorem ipsum dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      </div>
-      <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/140X140.gif" data-holder-rendered="true">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <div class="col-lg-3 col-sm-12 text-center" style="border-radius:5px; background-color: #ffffff; margin-right: 10px; padding-top: 30px; height: 240px; ""> 
+      	<img class="img-square" alt="OK" src="img/pozione.png" data-holder-rendered="true">
+        <h3 style="margin-bottom:20px;">Suspendisse</h3>
+        <p> Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.</p>
+        <a class="btn btn-secondary btn-lg" href="#" role="button" style="font-size: 13px">read more</a>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-12 page-header text-center">
-        <h2>TESTIMONIALS</h2>
+        <h1>WHY MODUS VERSUS?</h1>
+        <span>Capacitance cascading integer reflective interface data development high bus cache dithering transponder.</span>
       </div>
     </div>
     <div class="row">
-      <div class="col-6 col-lg-6">
-        <blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <small>Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
-      </div>
-      <div class="col-6 col-lg-6">
-        <blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <small>Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
-      </div>
-      <div class="col-6 col-lg-6">
-        <blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <small>Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
-      </div>
-      <div class="col-6 col-lg-6">
-        <blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <small>Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
-      </div>
-    </div>
-    
-  </div>
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-9 col-lg-9">
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, praesentium, autem, veritatis error quidem eos fuga atque asperiores magnam deleniti necessitatibus sequi quo</p>
-        </div>
-        <div class=" text-center col-sm-6 col-lg-3 col-sm-offset-3 col-md-3 col-xs-offset-4 col-xs-5 col-lg-offset-0"> 
-        	<a class="btn  btn-block btn-lg btn-success" href="#" title="">Sign up now!</a> 
-        </div>
-      </div>
+     <div class="carousel">
+ 		 <div class="carousel-content">
+  		  <div class="carousel-item"><img src="img/Logo_F2Y_small_firma.png"></div>
+  		  <div class="carousel-item"><img src="img/Logo_F2Y_small_firma.png"></div>
+  		  <div class="carousel-item"><img src="img/Logo_F2Y_small_firma.png"></div>
+ 		 </div>
+	 </div>
     </div>
   </div>
-  
-  <!-- /container -->
-  
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 page-header text-center">
-        <h2>OUR SERVICES</h2>
+      <div class="col-xs-6 col-lg-4">
+      	<h4>Why Choose Us?</h4>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+        <span>
+        Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus <u style="color:#e2534b">vehicula mattis</u>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.
+		</span>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+      	<h4>What Client's Say?</h4>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-6 col-lg-4">
-        <h3>Feature Description</h3>
-        <p> <i class="icon-desktop "></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt impedit est voluptatem doloremque architecto corporis suscipit quidem ratione! Quis laborum nam optio dolorem doloremque ex nobis quibusdam ad quo dolores? </p>
-        <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
+      <div class="col-xs-6 col-lg-4" style="padding-left:32px;">
+			<li style="list-style-image:url(img/freccia.png)">Quisque at massa ipsum</li>
+            <li style="list-style-image:url(img/freccia.png)">Maecenas a lorem augue, egestas</li>
+            <li style="list-style-image:url(img/freccia.png)">Cras vitae felis at lacus eleifend</li>
+            <li style="list-style-image:url(img/freccia.png)">Etiam auctor diam pellentesque</li>
+            <li style="list-style-image:url(img/freccia.png)">Nulla ac massa at dolor</li>
+            <li style="list-style-image:url(img/freccia.png)">Condimentum eleifend vitae vitae</li>
       </div>
-      <div class="col-xs-6 col-lg-4">
-        <h3>Feature Description</h3>
-        <p> <i class="icon-desktop "></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, illo, libero esse assumenda culpa consequatur exercitationem beatae odio praesentium nihil iste ipsum reiciendis pariatur. Recusandae, reiciendis quidem eaque aut ab. </p>
-        <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
+      <div>
+      <div class="col-xs-6 col-lg-4" >
+        <img src="img/Path50.png" alt="50" style="margin-right:15px; width: 70px; height:58px;">
+        <img src="img/Path70.png" alt="70" style="margin-right:15px; width: 70px; height:58px;">
+        <img src="img/Path80.png" alt="80" style="margin-right:15px; width: 70px; height:58px;">
+        <img src="img/Path100.png" alt="100" style="margin-right:15px; width: 70px; height:58px;">
+	  </div>
+      <div class="col-xs-6 col-lg-4" >
+			<span>
+            <i>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla 			ac massa at dolor condimentum
+			</i>
+            </span>
+            <h4 class="text-center">Jhon Doe</h4>
+      </div>  
       </div>
-      <div class="col-xs-6 col-lg-4">
-        <h3>Feature Description</h3>
-        <p> <i class="icon-desktop "></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, adipisci recusandae veniam laudantium distinctio temporibus eveniet dolorum earum iusto veritatis provident ducimus minima dolore quas vel omnis cumque voluptas quibusdam.</p>
-        <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
-      </div>
-      <div class="col-xs-6 col-lg-4">
-        <h3>Feature Description</h3>
-        <p> <em class="icon-desktop "></em> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, earum rem nostrum provident repellat inventore laborum deleniti quas facere Quasi impedit autem qui cupiditate modi vero vitae dolorum nisi explicabo ea dolores animi. Inventore, omnis.</p>
-        <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
-      </div>
-      <div class="col-xs-6 col-lg-4">
-        <h3>Feature Description</h3>
-        <p> <i class="icon-desktop "></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, iure, perspiciatis, ab ad quia animi esse repudiandae tempore quisquam dolorem sequi voluptatum qui fugiat. Quasi impedit autem qui cupiditate iusto?</p>
-        <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
-      </div>
-      <div class="col-xs-6 col-lg-4">
-        <h3>Feature Description</h3>
-        <p> <i class="icon-desktop "></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, aut, hic laudantium reprehenderit sapiente nemo consequatur corrupti accusantium! Hic, non rerum nihil reprehenderit excepturi explicabo error tempore aliquam eveniet odit.</p>
-        <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
+      
+<div class="row">
+      <div class="col-lg-12 page-header text-left">
+        <h2 style="float:left">Our Happy Clients</h2>
+        <a href="#"><img class="freccia" src="img/frecciarossa.png">
+        <a href="#"><img class="freccia" src="img/frecciagrigia.png" style="margin-right:15px; ">
       </div>
     </div>
-  </div>
   <!-- / CONTAINER--> 
 </section>
 <div class="well"> </div>
@@ -199,43 +190,52 @@
 <!-- FOOTER -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-offset-3 col-xs-12 col-lg-6">
-      <div class="jumbotron">
-        <div class="row text-center">
-          <div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h2>Request a free quote</h2>
-          </div>
-          <div class="text-center col-lg-12"> 
-            <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
-            <form role="form" id="feedbackForm" class="text-center">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                <span class="help-block" style="display: none;">Please enter your name.</span></div>
-              <div class="form-group">
-                <label for="email">E-Mail</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
-                <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span></div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message"></textarea>
-                <span class="help-block" style="display: none;">Please enter a message.</span></div>
-              <span class="help-block" style="display: none;">Please enter a the security code.</span>
-              <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" style=" margin-top: 10px;"> Send</button>
-            </form>
-            <!-- END CONTACT FORM --> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+   <img src="img/Rectangle.png" >
+   <img src="img/Rectangle.png" >
+   <img src="img/Rectangle.png" >
+   <img src="img/Rectangle.png" >
+   <img src="img/Rectangle.png">
+   <img src="img/Rectangle.png">
+   </div>
 </div>
-<footer class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>Copyright © MyWebsite. All rights reserved.</p>
+<footer class="text-left" style="margin-top:50px;background-color:#76c7c0;padding-top:10px;padding-bottom:20px;">
+  <div class="container" >
+	<div class="row">
+      <div class="col-xs-6 col-lg-4">
+      	<img src="img/logo.png" style="margin-bottom:20px;">
+        <p style="color:#ffffff; margin-bottom:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod 		odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .
+<p>
+<p style="color:#ffffff;">
+Phone: <span style="color:#ffffff; font-size:16px;"> 182 2569 5896</span>
+<br>
+e-mail: <span style="color:#ffffff; font-size:16px;">info@modus.versus</span>
+</p>
       </div>
+      <div class="col-xs-4 col-lg-2">
+ 		<p style="font-size:16px;">Company</p>
+        <li type="square" style="margin-left:15px; color:#ffffff">About</li>
+        <li type="square" style="margin-left:15px; color:#ffffff">FAQ</li>
+        <li type="square" style="margin-left:15px; color:#ffffff">Contact</li>
+        <li type="square" style="margin-left:15px; color:#ffffff">Terms</li>
+        <li type="square" style="margin-left:15px; color:#ffffff">Testimonials</li>        
+       </div>
+   
+        <div class="col-xs-4 col-lg-2">
+ 		<p style="font-size:16px;">Community</p>
+        <li type="square" style="margin-left:15px;color:#ffffff">Blog</li>
+        <li type="square" style="margin-left:15px;color:#ffffff">Forum</li>
+        <li type="square" style="margin-left:15px;color:#ffffff">Support</li>
+        <li type="square" style="margin-left:15px;color:#ffffff">Newsletter</li>        
+       </div>
+
+       <div class="col-xs-6 col-lg-4">
+ 		<p style="font-size:16px; color:#FFFFFF"><i>from the </i><strong>BLOG</strong></p>
+        <div><p><img src="img/picture.png" style="margin-bottom:10px; margin-right:10px;"><span style="color:#FFFFFF">Lorem ipsum dolor sit amet</		span></p></span></div>
+        <div><p><img src="img/picture.png" style="float:left; margin-right:10px;"><span style="color:#FFFFFF">Lorem ipsum dolor sit amet</span> </p></div>
+       </div>
+   
+      </div>
+    
     </div>
   </div>
 </footer>

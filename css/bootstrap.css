@@ -12,6 +12,7 @@ html {
 }
 body {
   margin: 0;
+  background-color : #f3f3f3 ;
 }
 article,
 aside,
@@ -266,7 +267,6 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
@@ -1089,7 +1089,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
+  color: #777777;
   background-color: #fff;
 }
 input,
@@ -1176,10 +1176,6 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
-h1,
-h2,
-h3,
-h4,
 h5,
 h6,
 .h1,
@@ -1193,6 +1189,44 @@ h6,
   line-height: 1.1;
   color: inherit;
 }
+h1 {
+font-family : OpenSans ;
+color : #e1524b ;
+font-size : 40px ;
+font-weight : 600 ;
+line-height : 48px ;
+}
+h2 {
+font-family : OpenSans ;
+color : #7f8c8c ;
+font-size : 30px ;
+font-weight : 600 ;
+line-height : 36px ;
+}
+h2 small{
+font-family : OpenSans ;
+color : #777777 ;
+font-size : 13px ;
+font-weight : 400 ;
+line-height : 20.8px ;
+}
+h3 {
+font-family : OpenSans ;
+color : #7f8c8c ;
+font-size : 16px ;
+font-weight : 700 ;
+line-height : 19.2px ;
+text-transform:uppercase;
+}
+h4 {
+font-family : OpenSans ;
+color : #7f8c8c ;
+font-size : 16px ;
+font-weight : 700 ;
+line-height : 19.2px ;
+}
+
+
 h1 small,
 h2 small,
 h3 small,
@@ -1293,6 +1327,11 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  font-family : OpenSans ;
+  color : #777777 ;
+  font-size : 13px ;
+  font-weight : 400 ;
+  line-height : 20.8px ;
 }
 .lead {
   margin-bottom: 20px;
@@ -2117,7 +2156,7 @@ pre code {
     width: 33.33333333%;
   }
   .col-lg-3 {
-    width: 25%;
+    width: 24.125%;
   }
   .col-lg-2 {
     width: 16.66666667%;
@@ -3087,8 +3126,31 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #e2534b;
+  border-color: #e2165b;
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 0 -2px 0 #e2165b inset;
+}
+.btn-secondary{
+  color: #fff;
+  background-color: #76c7c0;
+  border-color: #47817e;
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 0 -2px 0 #47817e inset;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary:active,
+.btn-secondary.active{
+  color: #fff;
+  background-color: #3E978F;
+  border-color: #3B6B69;
+  border-radius: 5px;
+  box-shadow: 0 -2px 0 #3B6B69 inset;
+
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3097,8 +3159,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #A10B3F;
+  border-color: #7a0930;
+  box-shadow: 0 -2px 0 #7a0930 inset;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -4071,7 +4134,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4391,7 +4453,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-left {
-    float: left !important;
+	  mportant;
   }
   .navbar-right {
     float: right !important;
@@ -4424,11 +4486,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
   background-color: #e2534b;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+	background: #62a29e none repeat scroll 0 0;
+    border-radius: 5px;
+    box-shadow: 0 -4px 0 #47817e inset;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4865,8 +4930,7 @@ a.badge:focus {
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
-}
+ }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
